@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yu.myapplication.Main3Activity"
+    android:background="#faefd5">
+
+    <TextView
+        android:text="point：0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="300dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_height="400dp"
+        android:layout_width="300dp"
+        app:srcCompat="@drawable/girl"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="100dp"
+        android:paddingLeft="30dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:text="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/button1"
+        android:onClick="backbutton"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:text="確定"
+
+        android:layout_height="80dp"
+        android:layout_width="150dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/button1"
+        android:onClick="confirm"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:text="HP"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/HPtext"
+                android:layout_weight="1"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/hptext"
+                android:layout_weight="1"
+                android:textColor="@android:color/background_dark" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:id="@+id/button5"
+                android:background="@drawable/minus"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="0dip"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"
+                android:onClick="hpreducebutton" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:textColor="@android:color/background_dark" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:background="@drawable/plus"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="0dip"
+                android:layout_weight="0.5"
+                android:onClick="hpaddbutton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:text="STR"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:textColor="@android:color/background_dark"
+                android:id="@+id/StrText" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/stext"
+                android:layout_weight="1"
+                android:textColor="@android:color/background_dark" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                android:background="@drawable/minus"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="0dip"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"
+                android:onClick="strreducebutton" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/textView10"
+                android:layout_weight="1"
+                android:textColor="@android:color/background_dark" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/plus"
+                android:layout_width="0dip"
+                android:layout_weight="0.5"
+                android:onClick="straddbutton" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
